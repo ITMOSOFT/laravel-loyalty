@@ -1,0 +1,12 @@
+{
+"name":"itmosoft/laravel-loyalty",
+"description":"A configurable loyalty points and rewards ledger for Laravel applications, with customer balances, earning, redemption, and auditable transactions.",
+"type":"library","license":"MIT",
+"require":{"php":"^8.3","illuminate/contracts":"^12.0 || ^13.0","illuminate/database":"^12.0 || ^13.0","illuminate/support":"^12.0 || ^13.0"},
+"require-dev":{"orchestra/testbench":"^10.0 || ^11.0","phpunit/phpunit":"^11.0 || ^12.0"},
+"autoload":{"psr-4":{"ItmoSoft\\Loyalty\\":"src/"}},
+"autoload-dev":{"psr-4":{"ItmoSoft\\Loyalty\\Tests\\":"tests/"}},
+"extra":{"laravel":{"providers":["ItmoSoft\\Loyalty\\LoyaltyServiceProvider"]}},
+"scripts":{"test":"phpunit","test:unit":"phpunit --testsuite=Unit","test:feature":"phpunit --testsuite=Feature"},
+"minimum-stability":"stable","prefer-stable":true
+}
